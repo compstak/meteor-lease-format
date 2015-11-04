@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'Meteor packagae wrapper for lease-format npm module',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/compstak/meteor-lease-format.git',
   documentation: 'README.md'
 });
 
@@ -14,7 +14,7 @@ Package.onUse(function (api) {
   api.addFiles('lease-format.js');
 });
 
-Package.onTest(function(api) {
+Package.onTest(function (api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('compstak:lease-format');
